@@ -1,2 +1,3 @@
 #!/bin/bash
-usermod -u betty root
+us betty
+
