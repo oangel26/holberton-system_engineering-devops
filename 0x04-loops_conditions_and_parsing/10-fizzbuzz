@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# that displays the time for 12 hours and 59 minutes:
+c=1
+while [ $c -le 100 ]
+do
+    if (( $c % 3 == 0 && $c % 5 == 0 ))
+	then
+	echo FizzBuss
+    elif (( $c % 3 == 0 ))
+	then
+	echo Fizz
+    elif (( $c % 5 == 0 ))
+	then
+	echo Buzz
+    else
+	echo $c
+    fi
+    (( c++ ))
+done
