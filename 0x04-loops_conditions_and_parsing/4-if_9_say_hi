@@ -4,7 +4,7 @@ c=1
 while [ "$c" -le 10 ]
 do
 	echo Holberton School
-	if (( $c == 9 ))
+	if (( c == 9 ))
 	then
 	    echo Hi
 	fi
