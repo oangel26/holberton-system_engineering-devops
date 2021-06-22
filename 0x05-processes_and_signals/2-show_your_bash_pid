@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-ps -aux | grep bash
+# Displays lines containing the bash word allowing to get PID
 # shellcheck disable=SC2059
+ps -aux | grep bash
