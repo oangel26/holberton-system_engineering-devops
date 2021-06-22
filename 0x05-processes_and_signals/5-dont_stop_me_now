@@ -1,2 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# scritp that stops 4-to_infinity_beyond
 kill -9 $(bash pgrep -f '4-to_infinity_and_beyond')
