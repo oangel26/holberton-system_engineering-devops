@@ -1,0 +1,2 @@
+#!/bin/bash
+kill -9 $(bash pgrep -f '4-to_infinity_and_beyond')
