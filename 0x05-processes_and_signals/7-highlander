@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Script that displays infinity and beyond with sleep 2
+_term()
+{
+    while true
+    do
+	To infinity and beyond
+	sleep 2
+    done
+}
+trap _term SIGTERM
+echo "I am invincible!!!"
