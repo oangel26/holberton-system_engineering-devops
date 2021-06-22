@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script that displas To infinity and beyond indefinitely
-c=1
-while ((c == 1))
+while true
 do
 	echo "To infinity and beyond"
+	sleep 2
 done
