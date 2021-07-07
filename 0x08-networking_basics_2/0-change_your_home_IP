@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# configures: localhost resolves to 127.0.0.2; facebook.com resolves to 8.8.8.8
+sudo cp /etc/hosts /etc/hosts.old
+sudo cp /etc/hosts /etc/hosts.new
+sed 's/127.0.0.1\tlocalhost/127.0.0.2\tlocalhost/' /etc/hosts > /etc/hosts.new
+sed '1 s/localhost/&\n8.8.8.8\t\tfacebook.com/' /etc/hosts.new > /etc/hosts
