@@ -1,3 +1,4 @@
+# Script that creates 'holberton' file in /tmp
 file { '/tmp/holberton':
   path    => '/tmp/holberton',
   owner   => 'www-data',
