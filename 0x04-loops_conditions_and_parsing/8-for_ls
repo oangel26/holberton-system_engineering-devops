@@ -8,5 +8,5 @@ LIST="$(ls)"
 for i in $LIST
 do
 	NAME=${i##*-}
-	echo $NAME
+	echo "$NAME"
 done
