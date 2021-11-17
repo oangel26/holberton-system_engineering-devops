@@ -38,5 +38,5 @@ You must add to 2-secured_and_monitored_web_infrastructure:
 Split components (web server, application server, database) with their own server
 ## Contributing
 - Oscar Angel - oangel26
-- Paola Carrero - py-cc
-- Steven Gonzalez - stevengm45
+- Juan Esteban Correa -
+- Laura Callejas -
