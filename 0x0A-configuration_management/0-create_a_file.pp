@@ -1,6 +1,6 @@
 # Script that creates 'holberton' file in /tmp
-file { '/tmp/holberton':
-  path    => '/tmp/holberton',
+file { 'school':
+  path    => '/tmp/school',
   owner   => 'www-data',
   group   => 'www-data',
   mode    => '0744',
