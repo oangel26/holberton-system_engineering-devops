@@ -9,5 +9,5 @@
 # (this script will be run on the server itself)
 sudo apt-get update
 sudo apt-get -y install nginx
-sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
 sudo service nginx restart
