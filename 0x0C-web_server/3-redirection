@@ -8,3 +8,4 @@ new_string="\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/wa
 file="/etc/nginx/sites-available/default"
 sudo sed -i "/$pattern/a\\$new_string" $file
 sudo service nginx restart
+echo 301
