@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# a Bash script that generates a MySQL dump and creates a compressed archive out of it.
+# Requirements:
+# The MySQL dump must contain all your MySQL databases
+# The MySQL dump must be named backup.sql
+# This archive must have the following name format: day-month-year.tar.gz
+# The Bash script accepts one argument that is the password used to connect to the MySQL database
+DATE=$(date +%d-%m-%Y)
+sudo mysqldump -u root --password="$1" --all-databases > backup.sql
+sudo tar -czf "$DATE".tar.gz backup.sql
