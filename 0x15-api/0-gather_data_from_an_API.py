@@ -6,9 +6,9 @@ information about his/her TODO list progress.
 
 
 if __name__ == "__main__":
+    import json
     from sys import argv
     from urllib import request
-    import json
 
     with request.urlopen('https://jsonplaceholder.typicode.com/users/' +
                          argv[1]) as response:
