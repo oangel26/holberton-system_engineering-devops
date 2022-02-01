@@ -10,11 +10,9 @@ if __name__ == "__main__":
     from urllib import request
     import json
 
-
     with request.urlopen('https://jsonplaceholder.typicode.com/users/' +
                          argv[1]) as response:
         employee_json = response.read()
-
 
     with request.urlopen('https://jsonplaceholder.typicode.com/users/' +
                          argv[1] + '/todos') as response:
@@ -23,12 +21,10 @@ if __name__ == "__main__":
     employee_todos_list = json.loads(employee_todos_json)
     employee_dict = json.loads(employee_json)
 
-
     count = 0
     for employee_todos_dict in employee_todos_list:
         if employee_todos_dict["completed"] is True:
             count += 1
-
 
     print("Employee {} is done with tasks({}/{}):".
           format(employee_dict["name"], count, len(employee_todos_list)))
