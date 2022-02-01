@@ -7,18 +7,18 @@ information about his/her TODO list progress.
 
 if __name__ == "__main__":
     import json
-    from sys import argv
-    from urllib import request
+    import sys
+    import urllib.request
 
-    if len(argv) < 2:
+    if len(sys.argv) < 2:
         print("USAGE: python3 [MODULE NAME] [EMPLOYEE ID]")
     else:
-        with request.urlopen('https://jsonplaceholder.typicode.com/users/' +
-                             argv[1]) as response:
+        with urllib.request.urlopen('https://jsonplaceholder.typicode.com/users/' +
+                             sys.argv[1]) as response:
             employee_json = response.read()
 
-        with request.urlopen('https://jsonplaceholder.typicode.com/users/' +
-                             argv[1] + '/todos') as response:
+        with urllib.request.urlopen('https://jsonplaceholder.typicode.com/users/' +
+                             sys.argv[1] + '/todos') as response:
             employee_todos_json = response.read()
 
         employee_todos_list = json.loads(employee_todos_json)
