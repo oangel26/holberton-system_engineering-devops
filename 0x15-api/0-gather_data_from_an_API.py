@@ -33,4 +33,4 @@ print("Employee {} is done with tasks({}/{}):".
       format(employee_dict["name"], count, len(employee_todos_list)))
 for employee_todos_dict in employee_todos_list:
     if employee_todos_dict["completed"] is True:
-        print('\t' + employee_todos_dict["title"])
+        print('\t ' + employee_todos_dict["title"])
