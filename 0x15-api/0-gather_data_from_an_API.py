@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 """
-Python script that using REST API, for a given given employee ID, returns \
+Python script that using REST API, for a given given employee ID, returns
 information about his/her TODO list progress.
 """
 
-
-from urllib import request
 from sys import argv
+from urllib import request
 import json
 
 
