@@ -10,12 +10,12 @@ from sys import argv
 import json
 
 
-with request.urlopen('https://jsonplaceholder.typicode.com/users/' + \
+with request.urlopen('https://jsonplaceholder.typicode.com/users/' +
                      argv[1]) as response:
     employee_json = response.read()
 
 
-with request.urlopen('https://jsonplaceholder.typicode.com/users/' + \
+with request.urlopen('https://jsonplaceholder.typicode.com/users/' +
                      argv[1] + '/todos') as response:
     employee_todos_json = response.read()
 
@@ -25,12 +25,12 @@ employee_dict = json.loads(employee_json)
 
 count = 0
 for employee_todos_dict in employee_todos_list:
-    if employee_todos_dict["completed"] == True:
+    if employee_todos_dict["completed"] is True:
         count += 1
 
 
-print("Employee {} is done with tasks({}/{}):".\
+print("Employee {} is done with tasks({}/{}):".
       format(employee_dict["name"], count, len(employee_todos_list)))
 for employee_todos_dict in employee_todos_list:
-    if employee_todos_dict["completed"] == True:
+    if employee_todos_dict["completed"] is True:
         print('\t' + employee_todos_dict["title"])
