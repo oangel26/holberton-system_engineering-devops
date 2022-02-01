@@ -29,7 +29,7 @@ if __name__ == "__main__":
             writer = csv.writer(f, quoting=csv.QUOTE_ALL)
             for i_dict in employee_todos_list:
                 csv_list = []
-                csv_list.append(employee_dict["userId"])
+                csv_list.append(i_dict["userId"])
                 csv_list.append(employee_dict["username"])
                 csv_list.append(i_dict["completed"])
                 csv_list.append(i_dict["title"])
